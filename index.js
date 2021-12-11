@@ -1,9 +1,9 @@
-function enterNumber() {
+function enterMessage() {
     let result = '';
     let cont;
     for (i = 1; ; i++) {
-        let num = prompt("enter number");
-        result = result + num;
+        let mes = prompt("enter your message");
+        result = result + mes;
         console.log(result);
 
         if (i % 3 === 0) {
@@ -17,4 +17,4 @@ function enterNumber() {
     }
 }
 
-enterNumber();
+enterMessage();
