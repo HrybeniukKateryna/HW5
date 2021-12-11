@@ -1,27 +1,20 @@
-/*function letString () {
-    let word;
+function enterNumber() {
     let result = '';
-    
-    do {
-        word = prompt('Enter your word');
-        if (word == 'break') {
-            break;
-        } // я добавила тут if, чтобы слово break не добавлялось к строке. т.е. работает оба варианта кода, но в первом, после введения break, слово сначала добавляется к строке, а потом прерывается цикл.
-        result = result + word;
+    let cont;
+    for (i = 1; ; i++) {
+        let num = prompt("enter number");
+        result = result + num;
         console.log(result);
-    }
-    while (word !== 'break');
-    }
-    letString();
-*/
 
-for (i = 0; ; i++) {
-    let m = prompt("enter number")
-    if (i % 3 == 0) {
-        let n = confirm("Continue?");
-        if (n == false) {
+        if (i % 3 === 0) {
+            cont = confirm("Continue?");
+        }
+
+        if (cont == false) {
             break;
         }
+
     }
-   
 }
+
+enterNumber();
